@@ -5,6 +5,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Raleway Extra Bold';
+  src: url('../fonts/raleway/Raleway-ExtraBold.eot');
+  src: url('../fonts/raleway/Raleway-ExtraBold.eot?#iefix') format('embedded-opentype'), url('../fonts/raleway/Raleway-ExtraBold.woff') format('woff'), url('../fonts/raleway/Raleway-ExtraBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -17,9 +24,18 @@
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/header-photo.jpg'), no-repeat;
   padding: 40px 150px 42px 150px;
 }
+.main-header ::after {
+  content: "";
+  display: block;
+  width: 100%;
+  clear: both;
+}
 .main-header-wrapper {
   width: 1170px;
   margin: 0 auto;
+}
+.main-header-wrapper-logo {
+  float: left;
 }
 .main-header-wrapper-logo-svg {
   fill: #ffffff;
@@ -34,4 +50,14 @@
   font-family: 'Raleway Thin';
   font-weight: 800;
   font-size: 34px;
+}
+.main-header-wrapper-menu-cart {
+  fill: #ffffff;
+  margin: 20px 0 0 0;
+  float: right;
+}
+.main-header-wrapper-menu-serch {
+  fill: #ffffff;
+  margin: 20px 28px 0 0;
+  float: right;
 }
