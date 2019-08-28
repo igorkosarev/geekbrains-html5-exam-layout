@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Raleway Thin';
+  src: url('../fonts/raleway/Raleway-Thin.eot');
+  src: url('../fonts/raleway/Raleway-Thin.eot?#iefix') format('embedded-opentype'), url('../fonts/raleway/Raleway-Thin.woff') format('woff'), url('../fonts/raleway/Raleway-Thin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 0 auto;
+  width: 1920px;
+}
+.main-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/header-photo.jpg'), no-repeat;
+  padding: 40px 150px 42px 150px;
+}
+.main-header-wrapper {
+  width: 1170px;
+  margin: 0 auto;
+}
+.main-header-wrapper-logo-svg {
+  fill: #ffffff;
+  display: block;
+  float: left;
+}
+.main-header-wrapper-logo-text {
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: -1.36px;
+  font-family: 'Raleway Thin';
+  font-weight: 800;
+  font-size: 34px;
+}
