@@ -51,13 +51,24 @@
   font-weight: 800;
   font-size: 34px;
 }
+.main-header-wrapper-menu .a:hover > svg {
+  fill: #c7b299;
+}
 .main-header-wrapper-menu-cart {
   fill: #ffffff;
   margin: 20px 0 0 0;
   float: right;
+  display: block;
+}
+.main-header-wrapper-menu-cart :hover {
+  fill: #c7b299;
 }
 .main-header-wrapper-menu-serch {
   fill: #ffffff;
   margin: 20px 28px 0 0;
   float: right;
+  display: block;
+}
+.main-header-wrapper-menu-serch :hover {
+  fill: #c7b299;
 }

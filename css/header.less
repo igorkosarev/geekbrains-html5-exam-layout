@@ -42,16 +42,28 @@ margin: 0 auto;
 }
 
     &-menu{
-
+        .a{ 
+        :hover svg{
+            fill: @hover-color;
+        }
+    }
         &-cart{
             fill: @nav-colors;
             margin: 20px 0 0 0;
             float: right;
+            display: block;
+            :hover{
+                fill: @hover-color;
+            }
         }
         &-serch{
             fill: @nav-colors;
             margin: 20px 28px 0 0;
             float: right;
+            display: block;
+            :hover{
+                fill: @hover-color;
+            }
         }
 }
 }
