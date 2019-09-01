@@ -35,7 +35,7 @@ padding: 0 0 285px 0;
             float: left;
             
         }
-        :hover > &-svg{
+        &:hover > &-svg{
             fill: @hover-color;
             stroke: @nav-colors;
             .time-effect();
@@ -47,7 +47,7 @@ padding: 0 0 285px 0;
             letter-spacing: -1.36px;
            .text('Raleway Thin', 800, 34px);
         }
-        :hover > &-text{
+        &:hover > &-text{
             color: @hover-color;
             .time-effect();
         }
@@ -85,14 +85,13 @@ padding: 0 0 285px 0;
         }
         }
         &-cart{
-            fill: @nav-colors;
-            margin: 15px 0 0 0;
-            padding: 0 28px 0 0;
-            
-            &-link{
-                float: right;
-                display: block;
-                :hover{
+            float: right;
+            display: block;
+            &-svg{
+                fill: @nav-colors;
+                margin: 15px 0 0 0;
+                padding: 0 28px 0 0;
+                &:hover{
                     fill: @hover-color;
                     .time-effect();
                 }
@@ -100,13 +99,12 @@ padding: 0 0 285px 0;
             
         }
         &-serch{
-            fill: @nav-colors;
-            margin: 15px 0 0 0;
-            
-            &-link{
-                float: right;
-                display: block;
-                :hover{
+            float: right;
+            display: block;
+            &-svg{
+                fill: @nav-colors;
+                margin: 15px 0 0 0;
+                &:hover{
                     fill: @hover-color;
                     .time-effect();
                 }
