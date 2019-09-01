@@ -13,7 +13,7 @@ linear-gradient(
          no-repeat;
 padding: 40px 150px 42px 150px;
 
-::after {
+&::after {
     content: "";
     display: block;
     width: 100%;
@@ -23,14 +23,22 @@ padding: 40px 150px 42px 150px;
 &-wrapper {
 width: @width-nat-bar;
 margin: 0 auto;
+padding: 0 0 285px 0;
 
     &-logo{
         float: left;
-
+        text-decoration: none;
+        
         &-svg{
             fill: @nav-colors;
             display: block;
             float: left;
+            
+        }
+        :hover > &-svg{
+            fill: @hover-color;
+            stroke: @nav-colors;
+            .time-effect();
         }
         &-text{
             color: @nav-colors;
@@ -39,32 +47,137 @@ margin: 0 auto;
             letter-spacing: -1.36px;
            .text('Raleway Thin', 800, 34px);
         }
+        :hover > &-text{
+            color: @hover-color;
+            .time-effect();
+        }
 }
 
     &-menu{
-        .a{ 
-        :hover svg{
-            fill: @hover-color;
-        }
+        float: right;
+        a{ 
+            text-decoration: none;
+            color: @nav-colors;
+            :hover {
+                color: @hover-color;
+                .time-effect();
+            }
     }
+        &-list{
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            margin: 0;
+            line-height: 56px;
+            .text('Montserrat', 100, 14px);
+            
+            :last-child li{
+                padding: 0 63px 0 0;
+            }
+            &-li{
+                position: relative;
+                display: inline-block;
+                margin: 0;
+                padding: 0 30px 0 0;
+                
+            }
+            
+        }
+        }
         &-cart{
             fill: @nav-colors;
-            margin: 20px 0 0 0;
-            float: right;
-            display: block;
-            :hover{
-                fill: @hover-color;
+            margin: 15px 0 0 0;
+            padding: 0 28px 0 0;
+            
+            &-link{
+                float: right;
+                display: block;
+                :hover{
+                    fill: @hover-color;
+                    .time-effect();
+                }
             }
+            
         }
         &-serch{
             fill: @nav-colors;
-            margin: 20px 28px 0 0;
-            float: right;
-            display: block;
-            :hover{
-                fill: @hover-color;
+            margin: 15px 0 0 0;
+            
+            &-link{
+                float: right;
+                display: block;
+                :hover{
+                    fill: @hover-color;
+                    .time-effect();
+                }
             }
         }
-}
-}
+    }
+
+    &-content{
+    margin: 0 auto;
+        &-left{
+            .arrow();
+            margin: 60px 0 0 0;
+            float: left;
+        }
+        &-right{
+            .arrow();
+            margin: 60px 0 0 0;
+            float: left;
+        }
+        &-text{
+            margin: 0 auto;
+            text-align: center;
+            width: 590px;
+            padding: 0 475px 0 475px;
+            float: left;
+            margin: 0 0 327px 0;
+            h2{
+                .text('Raleway Regular', 500, 36px);
+                color: @header-text-color;
+                margin: 0 0 14px 0;
+                padding: 0;
+            }
+            h1{
+                .text('Raleway Extra Bold', 400, 52px);
+                color: @header-text-color;
+                margin: 0 0 19px 0;
+                padding: 0;
+            }
+            p{
+                .text('Montserrat', 300, 16px);
+                line-height: 24px;
+                color: @header-text-color;
+                margin: 0 0 52px 0;
+                padding: 0;
+            }
+            button{
+                .button();
+            }
+            
+        }
+
+    }
+    &-pagination{
+        margin: 0 auto;
+        width: 120px;
+        display: flex;
+        justify-content: center;
+        &-link{
+            display: block;
+            width: 10px;
+            min-height: 10px;
+            margin: 5px;
+            border: 2px solid transparent;
+            border-radius: 50%;
+            
+            background-color: @pagination-color;
+            opacity: 0.5;
+            &:hover {
+                border: 2px solid @pagination-hover;
+                background-color: transparent;
+            }
+        }
+    }
 }
