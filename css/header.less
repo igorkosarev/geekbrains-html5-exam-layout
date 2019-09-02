@@ -128,14 +128,27 @@ padding: 0 0 285px 0;
     &-content{
     margin: 0 auto;
         &-left{
-            .arrow();
             margin: 60px 0 0 0;
             float: left;
+            &-button{
+                outline:none;
+                border: none;
+                background-color: rgba(0,0,0,0);
+            }
+            .arrow();
+
         }
         &-right{
-            .arrow();
             margin: 60px 0 0 0;
+            display: block;
             float: left;
+            &-button{
+                outline:none;
+                border: none;
+                background-color: rgba(0,0,0,0);
+            }
+            .arrow();
+
         }
         &-text{
             margin: 0 auto;
