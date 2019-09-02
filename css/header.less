@@ -40,6 +40,11 @@ padding: 0 0 285px 0;
             stroke: @nav-colors;
             .time-effect();
         }
+        &:active > &-svg{
+            fill: darken(@hover-color,@nav-active-darken);
+            stroke: @nav-colors;
+            .time-effect();
+        }
         &-text{
             color: @nav-colors;
             font-weight: 400;
@@ -51,6 +56,11 @@ padding: 0 0 285px 0;
             color: @hover-color;
             .time-effect();
         }
+        &:active > &-text{
+            color: darken(@hover-color,@nav-active-darken);
+            .time-effect();
+        }
+
 }
 
     &-menu{
@@ -60,6 +70,10 @@ padding: 0 0 285px 0;
             color: @nav-colors;
             :hover {
                 color: @hover-color;
+                .time-effect();
+            }
+            :active {
+                color: darken(@hover-color,@nav-active-darken);
                 .time-effect();
             }
     }

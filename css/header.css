@@ -20,6 +20,13 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'Raleway Semibold';
+  src: url('../fonts/raleway/Raleway-SemiBold.eot');
+  src: url('../fonts/raleway/Raleway-SemiBold.eot?#iefix') format('embedded-opentype'), url('../fonts/raleway/Raleway-SemiBold.woff') format('woff'), url('../fonts/raleway/Raleway-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'Montserrat';
   src: url('../fonts/montserrat/Montserrat-Regular.eot');
   src: url('../fonts/montserrat/Montserrat-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/montserrat/Montserrat-Regular.woff') format('woff'), url('../fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
@@ -55,6 +62,11 @@
   stroke: #ffffff;
   transition-duration: 200ms;
 }
+.main-header-wrapper-logo:active > .main-header-wrapper-logo-svg {
+  fill: #b59978;
+  stroke: #ffffff;
+  transition-duration: 200ms;
+}
 .main-header-wrapper-logo-text {
   color: #ffffff;
   font-weight: 400;
@@ -68,6 +80,10 @@
   color: #c7b299;
   transition-duration: 200ms;
 }
+.main-header-wrapper-logo:active > .main-header-wrapper-logo-text {
+  color: #b59978;
+  transition-duration: 200ms;
+}
 .main-header-wrapper-menu {
   float: right;
 }
@@ -77,6 +93,10 @@
 }
 .main-header-wrapper-menu a :hover {
   color: #c7b299;
+  transition-duration: 200ms;
+}
+.main-header-wrapper-menu a :active {
+  color: #b59978;
   transition-duration: 200ms;
 }
 .main-header-wrapper-menu-list {
