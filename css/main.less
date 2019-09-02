@@ -224,6 +224,9 @@ margin-bottom: 5px;
             height: 100%;
             position: absolute;
             z-index: 10;
+            top:50px;
+            left:50px;
+            display: none;
         }
         figure{
             
@@ -255,21 +258,25 @@ margin-bottom: 5px;
         }
         :hover figure{
             background-color: @projects-figure-background-color-hover;
+            .time-effect();
         }
         :hover h4{
             color: @projects-figure-title-color-hover;
+            .time-effect();
         }
         :hover span{
             color: @projects-figure-text-color-hover;
+            .time-effect();
         }
         & :hover &-dark{
             .time-effect();
-            background:
-                linear-gradient(
-                rgba(0, 0, 0, 0.5), 
-                rgba(0, 0, 0, 0.5)
-             );  
+            display: block;
+        } 
+        :hover img{
+            filter: brightness(50%);
+            .time-effect();
         }
+        
     }
     button{
         .button();
