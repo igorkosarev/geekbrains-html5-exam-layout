@@ -87,18 +87,6 @@
 .main-header-wrapper-menu {
   float: right;
 }
-.main-header-wrapper-menu a {
-  text-decoration: none;
-  color: #ffffff;
-}
-.main-header-wrapper-menu a :hover {
-  color: #c7b299;
-  transition-duration: 200ms;
-}
-.main-header-wrapper-menu a :active {
-  color: #b59978;
-  transition-duration: 200ms;
-}
 .main-header-wrapper-menu-list {
   display: flex;
   justify-content: space-between;
@@ -117,6 +105,18 @@
   display: inline-block;
   margin: 0;
   padding: 0 30px 0 0;
+}
+.main-header-wrapper-menu-list-li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.main-header-wrapper-menu-list-li a:hover {
+  color: #c7b299;
+  transition-duration: 200ms;
+}
+.main-header-wrapper-menu-list-li a:active {
+  color: #b59978;
+  transition-duration: 200ms;
 }
 .main-header-wrapper-cart {
   float: right;
