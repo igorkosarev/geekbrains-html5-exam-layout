@@ -16,7 +16,7 @@
     width: 290px;
     padding: 0 15px 0 15px;
     margin-top: auto;
-margin-bottom: 5px;
+    margin-bottom: 5px;
     &:first-child{
         padding: 0 15px 0 0;
     }
@@ -40,20 +40,18 @@ margin-bottom: 5px;
         }
         &:hover &-icon{
             fill: @options-hover-color;
-            .time-effect();
         }
         &:hover &-title {
             color: @options-hover-color;
-            .time-effect();
         }
     
         &:hover:after {
             background-color: @options-hover-color;
-            .time-effect();
         }
         &-icon{
             fill: @options-color;
             margin: 0 0 30px 0;
+            .time-effect();
         }
         &-title{
             margin: 0 0 20px 0;
@@ -61,10 +59,12 @@ margin-bottom: 5px;
             font-weight: bold;
             color: @options-color;
             .text('Raleway Semibold', 400, 22px);
+            .time-effect();
         }
         &-txt{
             margin: 0 0 30px 0;
             .text('Montserrat', 300, 14px);
+            .time-effect();
         }
     }
     
@@ -193,17 +193,17 @@ margin-bottom: 5px;
             text-decoration: none;
             color: @projects-nav-link-color;
             .text('Montserrat', 300, 14px);
+            .time-effect();
             &:hover{
                 color: @projects-nav-link-color-hover;
                 border: 1px solid @projects-nav-link-background-color-hover;
                 background-color: @projects-nav-link-background-color-hover;
-                .time-effect();
+                
             }
             &:active{
                 color: @button-active-text;
                 border: 1px solid darken(@projects-nav-link-background-color-hover, 5%);
                 background-color: darken(@projects-nav-link-background-color-hover, 5%);
-                .time-effect();
             }
         }
     }
@@ -227,9 +227,10 @@ margin-bottom: 5px;
             top:50px;
             left:50px;
             display: none;
+            .time-effect();
         }
         figure{
-            
+            .time-effect();
             background-color: @projects-figure-background-color;
         }
         &-container{
@@ -239,6 +240,7 @@ margin-bottom: 5px;
 
         img{
             margin: 0 0 -4px 0;
+            .time-effect();
         }
         figcaption{
             padding: 0 0 27px 0;
@@ -249,32 +251,34 @@ margin-bottom: 5px;
             text-decoration: none;
             .text('Raleway Regular', 500, 20px);
             color: @projects-figure-title-color;
+            .time-effect();
         }
         span{
             padding:0 0 0 28px;
             text-decoration: none;
             .text('Montserrat', 300, 14px);
             color: @projects-figure-text-color;
+            .time-effect();
         }
         :hover figure{
             background-color: @projects-figure-background-color-hover;
-            .time-effect();
+           
         }
         :hover h4{
             color: @projects-figure-title-color-hover;
-            .time-effect();
+           
         }
         :hover span{
             color: @projects-figure-text-color-hover;
-            .time-effect();
+           
         }
         & :hover &-dark{
-            .time-effect();
+           
             display: block;
         } 
         :hover img{
             filter: brightness(50%);
-            .time-effect();
+           
         }
         
     }
@@ -282,4 +286,81 @@ margin-bottom: 5px;
         .button();
         margin: 10px 0 0 0;
     }
+}
+
+.main-video{
+    min-height: 705px;
+    background-color: #4e3427;
+}
+
+.main-mobile{
+    position: relative;
+    padding: 195px 0 183px 877px;
+    background-color: @realization-background-color;
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        clear: both;
+    }
+    &-picture{
+        width: 423px;
+        min-height: 616px;
+        position: absolute;
+        bottom: 0px;
+        left: 423px;
+        background: url(../img/iPhone_in_hand.png) no-repeat @realization-background-color;
+    }
+    &-wrapper{
+        &-title{
+            .h2-title();
+            text-align: left;
+            margin: 0 0 40px 0;
+        }
+        &-txt{
+            width: 680px;
+            .text('Montserrat', 300, 16px);
+            color: @options-text-color;
+            line-height: 28px;
+            margin: 0 0 45px 0;
+            
+        }
+        &-details{
+            margin: 0 0 12px 100px;
+            .text('Montserrat', 300, 16px);
+            color: @options-text-color;
+            position: relative;
+            &:last-child{
+                margin: 0 0 0 100px;
+            }
+            summary{
+                outline: none;
+                &::-webkit-details-marker {
+                    display: none
+                  }
+                &::before{
+                    color: #ffffff;
+                    float: left;
+                    height: 21px;
+                    width: 21px;
+                    border-radius: 50%;
+                    padding: 0 0 0 0;
+                    content: url(../img/arrow.svg);
+                    text-align: center;
+                    margin: 0 0 0 0;
+                    line-height: 21px;
+                    position: absolute;
+                    top: 0;
+                    left: -50px;
+                  }
+            }
+            &[open]>p{
+                padding: 5px 0 0  0;
+            }
+            &[open]>summary::before{
+                transform: rotate(90deg);
+            }
+        }
+    }
+
 }

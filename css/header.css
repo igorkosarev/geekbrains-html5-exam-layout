@@ -56,16 +56,15 @@
   fill: #ffffff;
   display: block;
   float: left;
+  transition-duration: 200ms;
 }
 .main-header-wrapper-logo:hover > .main-header-wrapper-logo-svg {
   fill: #c7b299;
   stroke: #ffffff;
-  transition-duration: 200ms;
 }
 .main-header-wrapper-logo:active > .main-header-wrapper-logo-svg {
   fill: #b59978;
   stroke: #ffffff;
-  transition-duration: 200ms;
 }
 .main-header-wrapper-logo-text {
   color: #ffffff;
@@ -75,14 +74,13 @@
   font-family: 'Raleway Thin';
   font-weight: 800;
   font-size: 34px;
+  transition-duration: 200ms;
 }
 .main-header-wrapper-logo:hover > .main-header-wrapper-logo-text {
   color: #c7b299;
-  transition-duration: 200ms;
 }
 .main-header-wrapper-logo:active > .main-header-wrapper-logo-text {
   color: #b59978;
-  transition-duration: 200ms;
 }
 .main-header-wrapper-menu {
   float: right;
@@ -109,14 +107,13 @@
 .main-header-wrapper-menu-list-li a {
   text-decoration: none;
   color: #ffffff;
+  transition-duration: 200ms;
 }
 .main-header-wrapper-menu-list-li a:hover {
   color: #c7b299;
-  transition-duration: 200ms;
 }
 .main-header-wrapper-menu-list-li a:active {
   color: #b59978;
-  transition-duration: 200ms;
 }
 .main-header-wrapper-cart {
   float: right;
@@ -126,10 +123,10 @@
   fill: #ffffff;
   margin: 15px 0 0 0;
   padding: 0 28px 0 0;
+  transition-duration: 200ms;
 }
 .main-header-wrapper-cart-svg:hover {
   fill: #c7b299;
-  transition-duration: 200ms;
 }
 .main-header-wrapper-serch {
   float: right;
@@ -138,10 +135,10 @@
 .main-header-wrapper-serch-svg {
   fill: #ffffff;
   margin: 15px 0 0 0;
+  transition-duration: 200ms;
 }
 .main-header-wrapper-serch-svg:hover {
   fill: #c7b299;
-  transition-duration: 200ms;
 }
 .main-header-content {
   margin: 0 auto;
@@ -229,11 +226,11 @@
   box-shadow: inset 0 -3px 0 #736357;
   background-color: #998675;
   color: #ffffff;
+  transition-duration: 200ms;
 }
 .main-header-content-text button:hover {
   background-color: #8d7968;
   color: #ccc;
-  transition-duration: 200ms;
 }
 .main-header-content-text button:active {
   color: #ffffff;
@@ -253,6 +250,7 @@
   border-radius: 50%;
   background-color: #ffffff;
   opacity: 0.5;
+  transition-duration: 200ms;
 }
 .main-header-pagination-link:hover {
   border: 2px solid #d3c1ad;

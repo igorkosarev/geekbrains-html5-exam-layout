@@ -64,16 +64,15 @@
   fill: #ffffff;
   display: block;
   float: left;
+  transition-duration: 200ms;
 }
 .main-header-wrapper-logo:hover > .main-header-wrapper-logo-svg {
   fill: #c7b299;
   stroke: #ffffff;
-  transition-duration: 200ms;
 }
 .main-header-wrapper-logo:active > .main-header-wrapper-logo-svg {
   fill: #b59978;
   stroke: #ffffff;
-  transition-duration: 200ms;
 }
 .main-header-wrapper-logo-text {
   color: #ffffff;
@@ -83,14 +82,13 @@
   font-family: 'Raleway Thin';
   font-weight: 800;
   font-size: 34px;
+  transition-duration: 200ms;
 }
 .main-header-wrapper-logo:hover > .main-header-wrapper-logo-text {
   color: #c7b299;
-  transition-duration: 200ms;
 }
 .main-header-wrapper-logo:active > .main-header-wrapper-logo-text {
   color: #b59978;
-  transition-duration: 200ms;
 }
 .main-header-wrapper-menu {
   float: right;
@@ -117,14 +115,13 @@
 .main-header-wrapper-menu-list-li a {
   text-decoration: none;
   color: #ffffff;
+  transition-duration: 200ms;
 }
 .main-header-wrapper-menu-list-li a:hover {
   color: #c7b299;
-  transition-duration: 200ms;
 }
 .main-header-wrapper-menu-list-li a:active {
   color: #b59978;
-  transition-duration: 200ms;
 }
 .main-header-wrapper-cart {
   float: right;
@@ -134,10 +131,10 @@
   fill: #ffffff;
   margin: 15px 0 0 0;
   padding: 0 28px 0 0;
+  transition-duration: 200ms;
 }
 .main-header-wrapper-cart-svg:hover {
   fill: #c7b299;
-  transition-duration: 200ms;
 }
 .main-header-wrapper-serch {
   float: right;
@@ -146,10 +143,10 @@
 .main-header-wrapper-serch-svg {
   fill: #ffffff;
   margin: 15px 0 0 0;
+  transition-duration: 200ms;
 }
 .main-header-wrapper-serch-svg:hover {
   fill: #c7b299;
-  transition-duration: 200ms;
 }
 .main-header-content {
   margin: 0 auto;
@@ -237,11 +234,11 @@
   box-shadow: inset 0 -3px 0 #736357;
   background-color: #998675;
   color: #ffffff;
+  transition-duration: 200ms;
 }
 .main-header-content-text button:hover {
   background-color: #8d7968;
   color: #ccc;
-  transition-duration: 200ms;
 }
 .main-header-content-text button:active {
   color: #ffffff;
@@ -261,6 +258,7 @@
   border-radius: 50%;
   background-color: #ffffff;
   opacity: 0.5;
+  transition-duration: 200ms;
 }
 .main-header-pagination-link:hover {
   border: 2px solid #d3c1ad;
@@ -306,19 +304,17 @@
 }
 .main-options-element-link:hover .main-options-element-link-icon {
   fill: #c7b299;
-  transition-duration: 200ms;
 }
 .main-options-element-link:hover .main-options-element-link-title {
   color: #c7b299;
-  transition-duration: 200ms;
 }
 .main-options-element-link:hover:after {
   background-color: #c7b299;
-  transition-duration: 200ms;
 }
 .main-options-element-link-icon {
   fill: #555555;
   margin: 0 0 30px 0;
+  transition-duration: 200ms;
 }
 .main-options-element-link-title {
   margin: 0 0 20px 0;
@@ -328,12 +324,14 @@
   font-family: 'Raleway Semibold';
   font-weight: 400;
   font-size: 22px;
+  transition-duration: 200ms;
 }
 .main-options-element-link-txt {
   margin: 0 0 30px 0;
   font-family: 'Montserrat';
   font-weight: 300;
   font-size: 14px;
+  transition-duration: 200ms;
 }
 .main-realization {
   background-color: #fbfaf8;
@@ -440,12 +438,12 @@
   box-shadow: inset 0 -3px 0 #736357;
   background-color: #998675;
   color: #ffffff;
+  transition-duration: 200ms;
   float: right;
 }
 .main-purchase button:hover {
   background-color: #8d7968;
   color: #ccc;
-  transition-duration: 200ms;
 }
 .main-purchase button:active {
   color: #ffffff;
@@ -493,18 +491,17 @@
   font-family: 'Montserrat';
   font-weight: 300;
   font-size: 14px;
+  transition-duration: 200ms;
 }
 .main-projects-nav a:hover {
   color: #ffffff;
   border: 1px solid #998675;
   background-color: #998675;
-  transition-duration: 200ms;
 }
 .main-projects-nav a:active {
   color: #ffffff;
   border: 1px solid #8d7968;
   background-color: #8d7968;
-  transition-duration: 200ms;
 }
 .main-projects-wrapper {
   text-align: left;
@@ -527,8 +524,10 @@
   top: 50px;
   left: 50px;
   display: none;
+  transition-duration: 200ms;
 }
 .main-projects-wrapper figure {
+  transition-duration: 200ms;
   background-color: #fbfaf8;
 }
 .main-projects-wrapper-container {
@@ -537,6 +536,7 @@
 }
 .main-projects-wrapper img {
   margin: 0 0 -4px 0;
+  transition-duration: 200ms;
 }
 .main-projects-wrapper figcaption {
   padding: 0 0 27px 0;
@@ -549,6 +549,7 @@
   font-weight: 500;
   font-size: 20px;
   color: #c7b299;
+  transition-duration: 200ms;
 }
 .main-projects-wrapper span {
   padding: 0 0 0 28px;
@@ -557,26 +558,22 @@
   font-weight: 300;
   font-size: 14px;
   color: #d1d1d1;
+  transition-duration: 200ms;
 }
 .main-projects-wrapper :hover figure {
   background-color: #362f2d;
-  transition-duration: 200ms;
 }
 .main-projects-wrapper :hover h4 {
   color: #ffffff;
-  transition-duration: 200ms;
 }
 .main-projects-wrapper :hover span {
   color: #c7b299;
-  transition-duration: 200ms;
 }
 .main-projects-wrapper :hover .main-projects-wrapper-dark {
-  transition-duration: 200ms;
   display: block;
 }
 .main-projects-wrapper :hover img {
   filter: brightness(50%);
-  transition-duration: 200ms;
 }
 .main-projects button {
   width: 170px;
@@ -591,13 +588,92 @@
   box-shadow: inset 0 -3px 0 #736357;
   background-color: #998675;
   color: #ffffff;
+  transition-duration: 200ms;
   margin: 10px 0 0 0;
 }
 .main-projects button:hover {
   background-color: #8d7968;
   color: #ccc;
-  transition-duration: 200ms;
 }
 .main-projects button:active {
   color: #ffffff;
+}
+.main-video {
+  min-height: 705px;
+  background-color: #4e3427;
+}
+.main-mobile {
+  position: relative;
+  padding: 195px 0 183px 877px;
+  background-color: #fbfaf8;
+}
+.main-mobile::after {
+  content: "";
+  display: block;
+  width: 100%;
+  clear: both;
+}
+.main-mobile-picture {
+  width: 423px;
+  min-height: 616px;
+  position: absolute;
+  bottom: 0px;
+  left: 423px;
+  background: url(../img/iPhone_in_hand.png) no-repeat #fbfaf8;
+}
+.main-mobile-wrapper-title {
+  color: #555555;
+  font-family: 'Raleway Semibold';
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  text-align: left;
+  margin: 0 0 40px 0;
+}
+.main-mobile-wrapper-txt {
+  width: 680px;
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 16px;
+  color: #8c8c8c;
+  line-height: 28px;
+  margin: 0 0 45px 0;
+}
+.main-mobile-wrapper-details {
+  margin: 0 0 12px 100px;
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 16px;
+  color: #8c8c8c;
+  position: relative;
+}
+.main-mobile-wrapper-details:last-child {
+  margin: 0 0 0 100px;
+}
+.main-mobile-wrapper-details summary {
+  outline: none;
+}
+.main-mobile-wrapper-details summary::-webkit-details-marker {
+  display: none;
+}
+.main-mobile-wrapper-details summary::before {
+  color: #ffffff;
+  float: left;
+  height: 21px;
+  width: 21px;
+  border-radius: 50%;
+  padding: 0 0 0 0;
+  content: url(../img/arrow.svg);
+  text-align: center;
+  margin: 0 0 0 0;
+  line-height: 21px;
+  position: absolute;
+  top: 0;
+  left: -50px;
+}
+.main-mobile-wrapper-details[open] > p {
+  padding: 5px 0 0  0;
+}
+.main-mobile-wrapper-details[open] > summary::before {
+  transform: rotate(90deg);
 }

@@ -25,13 +25,13 @@
     box-shadow: inset 0 -3px 0 @button-shadow;
     background-color: @button-color;
     color: @header-text-color;
+    .time-effect();
     &:hover{
         background-color: darken(@button-color, 5%);
         color: @button-hover-text;
-        .time-effect();
     }
     &:active{
-color: @button-active-text;
+    color: @button-active-text;
     }
 }
 
