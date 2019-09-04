@@ -1,0 +1,106 @@
+@import "variables.less";
+@import "mixins.less";
+@import "fonts.less";
+
+.main-footer-brands{
+    padding: 140px 405px 140px 405px;
+    background-color: @hover-color;
+    background: 
+    linear-gradient(
+          rgba(0, 0, 0, 0.5), 
+          rgba(0, 0, 0, 0.5)
+        ),
+    url(../img/background-footer.jpg) no-repeat;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    svg{
+        display: block;
+    }
+    &::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+.main-footer-content{
+    padding: 80px 375px 140px 375px;
+    background-color: @footer-content-background-color;
+    &::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+.main-footer-info{
+    padding: 45px 375px 52px 375px;
+    background-color: @footer-info-background-color;
+    &::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    &-copyright{
+        .text('Montserrat', 300, 13px);
+        color: @options-color;
+        float:left;
+        &-element{
+            &:after{
+                content: "|";
+                margin: 0 8px 0 10px;
+                color: @separator-color;
+            }
+        }
+        &-element:last-child{
+            &:after{
+                content: "";
+                margin: 0;
+            }
+        }
+        a{
+            .time-effect(color);
+            text-decoration: none;
+            color: inherit;
+            &:hover{
+                color: @hover-color;
+            }
+        }
+        &-waxom{
+            color: @footer-link-color!important;
+            text-decoration: none;
+            &:hover{
+                color: @hover-color!important;
+            }
+        }
+    }
+    &-design{
+        float: right;
+        .text('Montserrat', 300, 13px);
+        color: @options-color;
+        &-element{
+            &:after{
+                content: "|";
+                margin: 0 8px 0 10px;
+                color: @separator-color;
+            }
+        }
+        &-element:last-child{
+            &:after{
+                content: "";
+                margin: 0;
+            }
+        }
+        a{
+            .time-effect(color);
+            text-decoration: none;
+            color: @footer-link-color;
+            &:hover{
+                color: @hover-color;
+            }
+        }
+       
+        
+    }
+}

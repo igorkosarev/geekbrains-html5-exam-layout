@@ -51,7 +51,7 @@
         &-icon{
             fill: @options-color;
             margin: 0 0 30px 0;
-            .time-effect();
+            .time-effect(fill);
         }
         &-title{
             margin: 0 0 20px 0;
@@ -59,12 +59,12 @@
             font-weight: bold;
             color: @options-color;
             .text('Raleway Semibold', 400, 22px);
-            .time-effect();
+            .time-effect(color);
         }
         &-txt{
             margin: 0 0 30px 0;
             .text('Montserrat', 300, 14px);
-            .time-effect();
+            .time-effect(color);
         }
     }
     
@@ -193,7 +193,7 @@
             text-decoration: none;
             color: @projects-nav-link-color;
             .text('Montserrat', 300, 14px);
-            .time-effect();
+            .time-effect(color border background-color);
             &:hover{
                 color: @projects-nav-link-color-hover;
                 border: 1px solid @projects-nav-link-background-color-hover;
@@ -227,10 +227,10 @@
             top:50px;
             left:50px;
             display: none;
-            .time-effect();
+            .time-effect(display);
         }
         figure{
-            .time-effect();
+            .time-effect(background-color);
             background-color: @projects-figure-background-color;
         }
         &-container{
@@ -240,7 +240,7 @@
 
         img{
             margin: 0 0 -4px 0;
-            .time-effect();
+            .time-effect(filter);
         }
         figcaption{
             padding: 0 0 27px 0;
@@ -251,14 +251,14 @@
             text-decoration: none;
             .text('Raleway Regular', 500, 20px);
             color: @projects-figure-title-color;
-            .time-effect();
+            .time-effect(color);
         }
         span{
             padding:0 0 0 28px;
             text-decoration: none;
             .text('Montserrat', 300, 14px);
             color: @projects-figure-text-color;
-            .time-effect();
+            .time-effect(color);
         }
         :hover figure{
             background-color: @projects-figure-background-color-hover;
@@ -323,7 +323,6 @@
             color: @options-text-color;
             line-height: 28px;
             margin: 0 0 45px 0;
-            
         }
         &-details{
             margin: 0 0 12px 100px;
@@ -350,7 +349,7 @@
                     margin: 0 0 0 0;
                     line-height: 21px;
                     position: absolute;
-                    top: 0;
+                    top: -2px;
                     left: -50px;
                   }
             }
@@ -363,4 +362,164 @@
         }
     }
 
+}
+
+.main-results{
+    padding: 69px 500px 60px 500px;
+    background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        clear: both;
+    }
+    &-wrapper{
+        display: flex;
+        justify-content: space-between;
+        &-goal{
+            width: 184px;
+            text-align: center;
+            &:after {
+                content: "";
+                display: block;
+                width: 30px;
+                height: 2px;
+                background-color: @header-text-color;
+                margin: 0 auto;
+            }
+            svg{
+                display: block;
+                fill:@hover-color;
+                margin: 0 auto 30px auto;
+            }
+            &-quantity{
+                display: block;
+                .text('Montserrat Thin', 400, 48px);
+                color: @header-text-color;
+                margin: 0 0 21px 0;
+            }
+            &-txt{
+                display: block;
+                .text('Montserrat', 400, 14px);
+                text-transform: uppercase;
+                color: @hover-color;
+                margin: 0 0 30px 0;
+            }
+        }
+    }
+}
+
+.main-posts{
+    padding: 80px 375px 80px 375px;
+    background-color: @nav-colors;
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        clear: both;
+    }
+    &-title{
+        .h2-title();
+        padding: 0 0 30px 0;
+    }
+    &-txt{
+        .text('Montserrat', 300, 16px);
+        text-align: center;
+        display: block;
+        width: 780px;
+        margin: 0 auto;
+        color: @realization-txt-color;
+        padding: 0 0 40px 0;
+    }
+    &-wrapper{
+        text-align: left;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        &-figure{
+            text-decoration: none;
+            display: block;
+            width: 370px;
+            margin: 0 0 30px 0;  
+            box-shadow: inset 0 0 0 1px #f8f8f8;
+            background-color: @posts-figure-background-color;
+            figure{
+            .time-effect(background-color);
+            }
+        }
+        &-dark{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 10;
+            top:50px;
+            left:50px;
+            display: none;
+            .time-effect(display);
+        }
+        &-container{
+            position: relative;
+            padding: 0;
+
+        }
+
+        img{
+            margin: 0 0 -4px 0;
+            .time-effect(filter);
+        }
+        figcaption{
+            padding: 0 0 27px 0;
+            margin: 0 0 0 0;
+        }
+        h4{
+            padding:26px 0 14px 28px;
+            text-decoration: none;
+            .text('Raleway Regular', 500, 20px);
+            color: @options-color;
+            .time-effect(color);
+        }
+        p{
+            padding:0 0 27px 28px;
+            text-decoration: none;
+            .text('Montserrat', 300, 14px);
+            color: @options-text-color;
+            .time-effect(color);
+        }
+        &-link{
+            text-decoration: none;
+            color: @projects-figure-text-color-hover;
+            .text('Montserrat', 300, 14px);
+            line-height: 20px;
+            padding:0 0 0 28px;
+            .time-effect(color);
+            ::after{
+                content: "";
+            }
+            &:hover{
+                color: @nav-colors;
+            }
+            &:active{
+                color: darken(@projects-figure-text-color-hover, 5%);
+            }
+        }
+        :hover figure{
+            background-color: @projects-figure-background-color-hover;
+            box-shadow: none;
+        }
+        :hover h4{
+            color: @options-hover-color;
+           
+        }
+        :hover p{
+            color: @nav-colors;
+           
+        }
+        & :hover &-dark{
+            display: block;
+        } 
+        :hover img{
+            filter: brightness(50%);
+        }
+    }
 }

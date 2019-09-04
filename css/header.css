@@ -33,6 +33,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Montserrat Thin';
+  src: url('../fonts/montserrat/Montserrat-Thin.eot');
+  src: url('../fonts/montserrat/Montserrat-Thin.eot?#iefix') format('embedded-opentype'), url('../fonts/montserrat/Montserrat-Thin.woff') format('woff'), url('../fonts/montserrat/Montserrat-Thin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 .main-header {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/header-photo.jpg'), no-repeat;
   padding: 40px 150px 42px 150px;
@@ -56,7 +63,7 @@
   fill: #ffffff;
   display: block;
   float: left;
-  transition-duration: 200ms;
+  transition: fill stroke 200ms;
 }
 .main-header-wrapper-logo:hover > .main-header-wrapper-logo-svg {
   fill: #c7b299;
@@ -74,7 +81,7 @@
   font-family: 'Raleway Thin';
   font-weight: 800;
   font-size: 34px;
-  transition-duration: 200ms;
+  transition: color 200ms;
 }
 .main-header-wrapper-logo:hover > .main-header-wrapper-logo-text {
   color: #c7b299;
@@ -107,7 +114,7 @@
 .main-header-wrapper-menu-list-li a {
   text-decoration: none;
   color: #ffffff;
-  transition-duration: 200ms;
+  transition: color 200ms;
 }
 .main-header-wrapper-menu-list-li a:hover {
   color: #c7b299;
@@ -123,7 +130,7 @@
   fill: #ffffff;
   margin: 15px 0 0 0;
   padding: 0 28px 0 0;
-  transition-duration: 200ms;
+  transition: fill 200ms;
 }
 .main-header-wrapper-cart-svg:hover {
   fill: #c7b299;
@@ -135,7 +142,7 @@
 .main-header-wrapper-serch-svg {
   fill: #ffffff;
   margin: 15px 0 0 0;
-  transition-duration: 200ms;
+  transition: fill 200ms;
 }
 .main-header-wrapper-serch-svg:hover {
   fill: #c7b299;
@@ -226,7 +233,8 @@
   box-shadow: inset 0 -3px 0 #736357;
   background-color: #998675;
   color: #ffffff;
-  transition-duration: 200ms;
+  transition: background-color 200ms;
+  transition: color 200ms;
 }
 .main-header-content-text button:hover {
   background-color: #8d7968;
@@ -250,7 +258,7 @@
   border-radius: 50%;
   background-color: #ffffff;
   opacity: 0.5;
-  transition-duration: 200ms;
+  transition: border background-color 200ms;
 }
 .main-header-pagination-link:hover {
   border: 2px solid #d3c1ad;
