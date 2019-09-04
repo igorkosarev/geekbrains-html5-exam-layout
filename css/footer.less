@@ -25,12 +25,18 @@
 }
 
 .main-footer-content{
-    padding: 80px 375px 140px 375px;
+    padding: 80px 375px 80px 375px;
     background-color: @footer-content-background-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     &::after {
         content: "";
         display: block;
         clear: both;
+    }
+    &-wrapper{
+        max-width: 270px;
     }
 }
 
@@ -46,10 +52,11 @@
         .text('Montserrat', 300, 13px);
         color: @options-color;
         float:left;
+        
         &-element{
             &:after{
                 content: "|";
-                margin: 0 8px 0 10px;
+                margin: 0 7px 0 10px;
                 color: @separator-color;
             }
         }
@@ -82,7 +89,7 @@
         &-element{
             &:after{
                 content: "|";
-                margin: 0 8px 0 10px;
+                margin: 0 7px 0 10px;
                 color: @separator-color;
             }
         }
