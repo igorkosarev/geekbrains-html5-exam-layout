@@ -37,6 +37,69 @@
     }
     &-wrapper{
         max-width: 270px;
+        display: flex;
+        flex-direction: column;
+        &-logo{
+            padding: 0 0 29px 0;
+        }
+        &-txt{
+            display: block;
+            .text('Montserrat', 300, 14px);
+            line-height: 24px;
+            color: @options-color;
+            padding: 0 0 29px 0;
+        }
+        &-link{
+            color: @projects-figure-text-color;
+            .time-effect(color);
+            .text('Montserrat', 300, 14px);
+            text-decoration: none;
+            &:hover{
+                color: @hover-color;
+            }
+            &:active{
+                color:darken(@hover-color, @nav-active-darken);
+            }
+        }
+        &-title{
+            .text('Raleway Semibold', 700, 24px);
+            color:@nav-colors;
+            padding: 28px 0 30px 0;
+        }
+        &-post{
+            text-decoration: none;
+            padding: 0 0 20px 0;
+            .time-effect(color);
+            &:hover span{
+                    color: @nav-colors;
+                }
+            &:hover p{
+                    color: @hover-color;
+                }
+            &:active span{
+                    color: darken(@nav-colors, @nav-active-darken);
+                }
+            &:active p{
+                    color: darken(@hover-color,@nav-active-darken);
+                }
+            span{
+                .text('Montserrat', 300, 12px);
+                color: @footer-date-color;
+                padding: 0 0 10px 0;
+            }
+            p{
+                .text('Montserrat', 300, 14px);
+                color: @options-color;
+                padding: 0 0 21px 0;
+            }
+            &:after{
+                content: "";
+                display: block;
+                height: 1px;
+                width: 270px;
+                background-color: @separator-color;
+            }
+        }
     }
 }
 
