@@ -69,7 +69,6 @@
         &-post{
             text-decoration: none;
             padding: 0 0 20px 0;
-            .time-effect(color);
             &:hover span{
                     color: @nav-colors;
                 }
@@ -86,11 +85,13 @@
                 .text('Montserrat', 300, 12px);
                 color: @footer-date-color;
                 padding: 0 0 10px 0;
+                .time-effect(color);
             }
             p{
                 .text('Montserrat', 300, 14px);
                 color: @options-color;
                 padding: 0 0 21px 0;
+                .time-effect(color);
             }
             &::after{
                 content: "";

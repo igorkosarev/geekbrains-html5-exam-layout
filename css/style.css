@@ -962,7 +962,6 @@ body {
 .main-footer-content-wrapper-post {
   text-decoration: none;
   padding: 0 0 20px 0;
-  transition: color 300ms;
 }
 .main-footer-content-wrapper-post:hover span {
   color: #ffffff;
@@ -982,6 +981,7 @@ body {
   font-size: 12px;
   color: #363636;
   padding: 0 0 10px 0;
+  transition: color 300ms;
 }
 .main-footer-content-wrapper-post p {
   font-family: 'Montserrat';
@@ -989,6 +989,7 @@ body {
   font-size: 14px;
   color: #555555;
   padding: 0 0 21px 0;
+  transition: color 300ms;
 }
 .main-footer-content-wrapper-post::after {
   content: "";
