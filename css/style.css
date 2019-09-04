@@ -868,7 +868,7 @@ body {
   filter: brightness(50%);
 }
 .main-footer-brands {
-  padding: 140px 405px 140px 405px;
+  padding: 140px 405px 139px 405px;
   background-color: #c7b299;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background-footer.jpg) no-repeat;
   display: flex;
