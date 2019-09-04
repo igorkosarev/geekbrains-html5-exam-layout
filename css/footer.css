@@ -137,10 +137,20 @@
   color: #555555;
   padding: 0 0 21px 0;
 }
-.main-footer-content-wrapper-post:after {
+.main-footer-content-wrapper-post::after {
   content: "";
   display: block;
   height: 1px;
+  width: 270px;
+  background-color: #252525;
+}
+.main-footer-content-wrapper-post:last-child {
+  padding: 0;
+}
+.main-footer-content-wrapper-post:last-child::after {
+  content: "";
+  display: block;
+  height: 0;
   width: 270px;
   background-color: #252525;
 }

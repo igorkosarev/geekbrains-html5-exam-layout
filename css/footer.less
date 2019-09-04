@@ -92,10 +92,20 @@
                 color: @options-color;
                 padding: 0 0 21px 0;
             }
-            &:after{
+            &::after{
                 content: "";
                 display: block;
                 height: 1px;
+                width: 270px;
+                background-color: @separator-color;
+            }
+            &:last-child{
+                padding:0;
+            }
+            &:last-child::after{
+                content: "";
+                display: block;
+                height: 0;
                 width: 270px;
                 background-color: @separator-color;
             }
