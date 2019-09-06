@@ -84,12 +84,13 @@
             span{
                 .text('Montserrat', 300, 12px);
                 color: @footer-date-color;
-                padding: 0 0 10px 0;
+                /*padding: 0 0 10px 0;*/
                 .time-effect(color);
             }
             p{
                 .text('Montserrat', 300, 14px);
                 color: @options-color;
+                margin: 10px 0 0 0;
                 padding: 0 0 21px 0;
                 .time-effect(color);
             }
@@ -109,6 +110,78 @@
                 height: 0;
                 width: 270px;
                 background-color: @separator-color;
+            }
+        }
+        &-twitt{
+            padding: 0 0 20px 0;
+            
+            p{
+                .text('Montserrat', 300, 14px);
+                color: @options-color;
+                padding: 0 0 10px 0;
+                a{
+                    text-decoration: none;
+                    color:@twitter-link-color;
+                    .time-effect(color);
+                    &:hover{
+                        color: darken(@twitter-link-color,@nav-hover-darken);
+                    }
+                    &:active{
+                        color: darken(@twitter-link-color,@nav-active-darken);
+                    }
+                }
+            }
+
+            span{
+                .text('Montserrat', 300, 12px);
+                color: @footer-date-color;
+                
+            }
+            &::after{
+                content: "";
+                display: block;
+                height: 1px;
+                width: 270px;
+                margin: 21px 0 0  0;
+                background-color: @separator-color;
+            }
+            &:last-child::after{
+                content: "";
+                display: block;
+                height: 0;
+                width: 270px;
+                background-color: @separator-color;
+            }
+            &:last-child{
+                padding:0;
+            }
+            &-bit{
+                text-decoration: none;
+                    color:@footer-link-color!important;
+                    .time-effect(color);
+                    &:hover{
+                        color: @hover-color!important;
+                    }
+                    &:active{
+                        color: darken(@hover-color,@nav-active-darken)!important;
+                    }
+            }
+        }
+        &-widgetbox{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            min-width: 270px;
+            justify-content: space-between;
+            align-content: space-between;
+            img{
+                padding: 0 0 10px 0;
+                &:last-child{
+                    padding: 0 0 0 0;
+                }
+                &:nth-last-child(2){
+                    padding: 0 0 0 0;
+                }
             }
         }
     }
@@ -147,6 +220,9 @@
             &:hover{
                 color: @hover-color;
             }
+            &:active{
+                color: darken(@hover-color,@nav-active-darken);
+            }
         }
         &-waxom{
             color: @footer-link-color!important;
@@ -180,8 +256,12 @@
             &:hover{
                 color: @hover-color;
             }
+            &:active{
+                color: darken(@hover-color,@nav-active-darken);
+            }
         }
        
         
     }
 }
+
