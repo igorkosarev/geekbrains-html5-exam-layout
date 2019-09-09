@@ -54,6 +54,16 @@
             .time-effect(color);
             .text('Montserrat', 300, 14px);
             text-decoration: none;
+            &::after{
+                .link-triangle(@projects-figure-text-color);
+                margin: 5px 0 0 10px;
+            }
+            &:hover::after{
+                border-left: 5px solid @hover-color;
+            }
+            &:active::after{
+                border-left: 5px solid darken(@hover-color, @nav-active-darken);
+            }
             &:hover{
                 color: @hover-color;
             }
@@ -253,6 +263,7 @@
             .time-effect(color);
             text-decoration: none;
             color: @footer-link-color;
+            
             &:hover{
                 color: @hover-color;
             }
