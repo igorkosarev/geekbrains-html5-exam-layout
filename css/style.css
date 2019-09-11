@@ -645,8 +645,12 @@ body {
   color: #ffffff;
 }
 .main-video {
-  min-height: 705px;
   background-color: #4e3427;
+  margin: 0;
+  padding: 0;
+}
+.main-video video {
+  display: block;
 }
 .main-mobile {
   position: relative;

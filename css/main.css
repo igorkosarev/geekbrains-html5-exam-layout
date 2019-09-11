@@ -375,8 +375,11 @@
   color: #ffffff;
 }
 .main-video {
-  min-height: 705px;
   background-color: #4e3427;
+  position: relative;
+}
+.main-video video {
+  display: block;
 }
 .main-mobile {
   position: relative;
@@ -637,7 +640,6 @@
   border-left: 5px solid #c7b299;
   position: absolute;
   content: "";
-  vertical-align: middle;
   margin: 6px 0 0 10px;
 }
 .main-posts-wrapper-link:hover {
