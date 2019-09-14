@@ -40,6 +40,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url('../fonts/roboto/Roboto-Regular.eot');
+  src: url('../fonts/roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/roboto/Roboto-Regular.woff') format('woff'), url('../fonts/roboto/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 .main-options {
   padding: 90px 150px 80px 150px;
   display: flex;
@@ -291,7 +298,7 @@
   content: "";
   position: absolute;
   display: block;
-  bottom: 0;
+  bottom: -1px;
   left: 20px;
   border: 15px solid transparent;
   border-bottom: 10px solid #fbfaf8;
@@ -661,6 +668,7 @@
   display: flex;
   flex-direction: column;
   border-radius: 3px;
+  z-index: 100;
   transition: background-color 300ms;
 }
 .main-posts-wrapper-calendar-date {
@@ -676,11 +684,13 @@
   text-align: center;
   width: 100%;
   border-radius: 0 0 3px 3px;
+  font-family: 'Roboto Regular';
+  font-weight: 400;
+  font-size: 12px;
   transition: background-color 300ms;
 }
 .main-posts-wrapper :hover .main-posts-wrapper-calendar {
   background-color: #c7b299;
-  z-index: 100;
 }
 .main-posts-wrapper :hover .main-posts-wrapper-calendar-month {
   background-color: #a48d72;
