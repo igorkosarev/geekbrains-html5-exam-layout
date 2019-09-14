@@ -285,6 +285,17 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  position: relative;
+}
+.main-projects-wrapper-container::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 20px;
+  border: 15px solid transparent;
+  border-bottom: 10px solid #fbfaf8;
+  transition: border-bottom 300ms;
 }
 .main-projects-wrapper-element {
   text-decoration: none;
@@ -297,8 +308,8 @@
   height: 100%;
   position: absolute;
   z-index: 10;
-  top: 50px;
-  left: 50px;
+  top: 0;
+  left: 0;
   display: none;
   transition: display 300ms;
 }
@@ -346,7 +357,27 @@
   color: #c7b299;
 }
 .main-projects-wrapper :hover .main-projects-wrapper-dark {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-projects-wrapper :hover .main-projects-wrapper-dark a {
+  fill: #ffffff;
+  text-decoration: none;
+  padding: 0 28px 0 0;
+  transition: fill 300ms;
+}
+.main-projects-wrapper :hover .main-projects-wrapper-dark a:last-child {
+  padding: 0;
+}
+.main-projects-wrapper :hover .main-projects-wrapper-dark a:hover {
+  fill: #c7b299;
+}
+.main-projects-wrapper :hover .main-projects-wrapper-dark a:active {
+  fill: #b59978;
+}
+.main-projects-wrapper :hover .main-projects-wrapper-container::after {
+  border-bottom: 10px solid #362f2d;
 }
 .main-projects-wrapper :hover img {
   filter: brightness(50%);

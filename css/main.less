@@ -208,11 +208,27 @@
         }
     }
     &-wrapper{
+
+        
+
         text-align: left;
         margin: 0 auto;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
+        position: relative;
+
+        &-container::after{
+            content:"";
+            position: absolute;
+            display: block;
+            bottom:0;
+            left:20px;
+            border: 15px solid transparent; 
+            border-bottom: 10px solid @projects-figure-background-color;
+            .time-effect(border-bottom);
+        }
+
         &-element{
             text-decoration: none;
             display: block;
@@ -224,11 +240,12 @@
             height: 100%;
             position: absolute;
             z-index: 10;
-            top:50px;
-            left:50px;
+            top:0;
+            left:0;
             display: none;
             .time-effect(display);
         }
+        
         figure{
             .time-effect(background-color);
             background-color: @projects-figure-background-color;
@@ -274,8 +291,30 @@
         }
         & :hover &-dark{
            
-            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+                fill: @nav-colors;
+                text-decoration: none;
+                padding: 0 28px 0 0;
+                .time-effect(fill);
+                &:last-child{
+                    padding: 0;
+                }
+                &:hover{
+                    fill: @hover-color;
+                }
+                &:active{
+                    fill: darken(@hover-color, @nav-active-darken);
+                }
+            }
+        
         } 
+        & :hover &-container::after{
+            border-bottom: 10px solid @projects-figure-background-color-hover;
+        }
+
         :hover img{
             filter: brightness(50%);
            
