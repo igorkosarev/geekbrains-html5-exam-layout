@@ -1328,6 +1328,10 @@ body {
   color: #b59978;
 }
 @media (max-width: 900px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
   .main-footer-content {
     display: none;
   }
@@ -1339,5 +1343,109 @@ body {
   }
   .main-results {
     display: none;
+  }
+  .main-realization {
+    display: none;
+  }
+  .main-purchase {
+    display: none;
+  }
+  .main-header-section {
+    display: none;
+  }
+  .main-mobile {
+    display: none;
+  }
+  .main-header {
+    display: none;
+  }
+  .container {
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  .main-header {
+    padding: 0;
+  }
+  .main-options {
+    padding: 20px 10px 10px 20px;
+    flex-wrap: wrap;
+  }
+  .main-options-element {
+    padding: 10px 15px 10px 15px;
+  }
+  .main-options-element:first-child {
+    padding: 10px 15px 10px 15px;
+  }
+  .main-options-element:last-child {
+    padding: 10px 15px 10px 15px;
+  }
+  .main-projects {
+    padding: 20px 10px 20px 10px;
+  }
+  .main-projects-txt {
+    width: auto;
+    padding: 0 0 10px 0;
+  }
+  .main-mobile {
+    padding: 20px 10px 20px 10px;
+  }
+  .main-mobile-picture {
+    left: 20px;
+  }
+  .main-video {
+    height: 705px;
+  }
+  .main-video-content {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/video.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .main-posts {
+    padding: 20px 10px 20px 10px;
+  }
+  .main-posts-txt {
+    width: auto;
+  }
+  .main-posts-wrapper {
+    justify-content: center;
+  }
+  .main-posts-wrapper-figure {
+    padding: 0 40px 0 40px;
+  }
+  .main-footer-brands {
+    padding: 20px 10px 20px 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+  }
+  .main-footer-brands svg {
+    display: block;
+    padding: 20px 45px 20px 45px;
+  }
+  .main-footer-brands::after {
+    content: "";
+    display: block;
+    clear: both;
+    width: 100%;
+  }
+  .main-footer-info {
+    padding: 20px 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-footer-info-copyright {
+    padding: 0 0 15px 0;
+    float: none;
+    text-align: center;
+  }
+  .main-footer-info-design {
+    float: none;
+    text-align: center;
   }
 }
