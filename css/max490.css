@@ -1,0 +1,29 @@
+@media (max-width: 490px) {
+  .main-mobile {
+    padding: 40px 10px 40px 10px;
+    min-height: unset;
+  }
+  .main-mobile-wrapper-title {
+    text-align: center;
+  }
+  .main-mobile-wrapper-txt {
+    width: auto;
+    padding: 0 10px 0 10px;
+  }
+  .main-mobile-wrapper-details {
+    padding: 0 0 0 40px;
+    margin: 0 0 12px 0;
+  }
+  .main-mobile-wrapper-details:last-child {
+    margin: 0;
+  }
+  .main-mobile-wrapper-details summary::before {
+    left: 10px;
+  }
+  .main-mobile-picture {
+    display: none;
+  }
+  .main-mobile-picture img {
+    display: none;
+  }
+}

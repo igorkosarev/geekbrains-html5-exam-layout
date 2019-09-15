@@ -25,9 +25,7 @@
     .main-header-section{
         display: none;
     }
-    .main-mobile{
-        display: none;
-    }
+    
     .main-header{
         display: none;
     }
@@ -69,7 +67,7 @@
 
 
       .main-projects{
-        padding: 20px 10px 20px 10px;
+        padding: 40px 10px 20px 10px;
         
         &-txt{
             width: auto;
@@ -79,9 +77,43 @@
 
 
       .main-mobile{
-        padding: 20px 10px 20px 10px;
+        padding: 40px 10px 20vh 10px;
+        min-height: 80vw;
+        &-wrapper{
+            &-title{
+                text-align: center;
+            }
+            &-txt{
+                width: auto;
+                padding: 0 10px 0 10px;
+            }
+            &-details{
+                padding: 0 0 0 42vw;
+                margin: 0 0 12px 0;
+                &:last-child{
+                    margin: 0;
+                }
+                summary{
+                    &::before{
+                        left: 37vw;
+                      }
+            }
+        }
+        }
         &-picture{
             left: 20px;
+            width: unset;
+            height: inherit;
+            background: none;
+            display: flex;
+            img{
+                display: block;
+                width: 40vw;
+                height: 58.25vw;
+                position: absolute;
+                bottom: 0;
+                
+            }
         }
       }
       .main-video{
@@ -99,19 +131,17 @@
     
 
     .main-posts{
-        padding: 20px 10px 20px 10px;
+        padding: 40px 10px 20px 10px;
         &-txt{
             width: auto;
         }
         &-wrapper{
             justify-content: center;
-            &-figure{
-                padding: 0 40px 0 40px;
-            }
+            
         }
     }
       .main-footer-brands{
-        padding: 20px 10px 20px 10px;
+        padding: 40px 10px 40px 10px;
         flex-wrap: wrap;
         justify-content: center;
         background-position: center;
@@ -129,7 +159,7 @@
         }
       }
       .main-footer-info{
-        padding: 20px 10px 20px 10px;
+        padding: 40px 10px 40px 10px;
         display: flex;
         flex-direction: column;
         justify-content: center;

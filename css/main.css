@@ -490,9 +490,12 @@
   width: 423px;
   min-height: 616px;
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   left: 423px;
-  background: url(../img/iPhone_in_hand.png) no-repeat #fbfaf8;
+  background: url(../img/iPhone_in_hand.png) no-repeat;
+}
+.main-mobile-picture img {
+  display: none;
 }
 .main-mobile-wrapper-title {
   color: #555555;

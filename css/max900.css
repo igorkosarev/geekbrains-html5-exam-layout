@@ -24,9 +24,6 @@
   .main-header-section {
     display: none;
   }
-  .main-mobile {
-    display: none;
-  }
   .main-header {
     display: none;
   }
@@ -55,17 +52,46 @@
     padding: 10px 15px 10px 15px;
   }
   .main-projects {
-    padding: 20px 10px 20px 10px;
+    padding: 40px 10px 20px 10px;
   }
   .main-projects-txt {
     width: auto;
     padding: 0 0 10px 0;
   }
   .main-mobile {
-    padding: 20px 10px 20px 10px;
+    padding: 40px 10px 20vh 10px;
+    min-height: 80vw;
+  }
+  .main-mobile-wrapper-title {
+    text-align: center;
+  }
+  .main-mobile-wrapper-txt {
+    width: auto;
+    padding: 0 10px 0 10px;
+  }
+  .main-mobile-wrapper-details {
+    padding: 0 0 0 42vw;
+    margin: 0 0 12px 0;
+  }
+  .main-mobile-wrapper-details:last-child {
+    margin: 0;
+  }
+  .main-mobile-wrapper-details summary::before {
+    left: 37vw;
   }
   .main-mobile-picture {
     left: 20px;
+    width: unset;
+    height: inherit;
+    background: none;
+    display: flex;
+  }
+  .main-mobile-picture img {
+    display: block;
+    width: 40vw;
+    height: 58.25vw;
+    position: absolute;
+    bottom: 0;
   }
   .main-video {
     height: 705px;
@@ -76,7 +102,7 @@
     background-size: cover;
   }
   .main-posts {
-    padding: 20px 10px 20px 10px;
+    padding: 40px 10px 20px 10px;
   }
   .main-posts-txt {
     width: auto;
@@ -84,11 +110,8 @@
   .main-posts-wrapper {
     justify-content: center;
   }
-  .main-posts-wrapper-figure {
-    padding: 0 40px 0 40px;
-  }
   .main-footer-brands {
-    padding: 20px 10px 20px 10px;
+    padding: 40px 10px 40px 10px;
     flex-wrap: wrap;
     justify-content: center;
     background-position: center;
@@ -105,7 +128,7 @@
     width: 100%;
   }
   .main-footer-info {
-    padding: 20px 10px 20px 10px;
+    padding: 40px 10px 40px 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
