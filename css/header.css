@@ -40,6 +40,21 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url('../fonts/roboto/Roboto-Regular.eot');
+  src: url('../fonts/roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/roboto/Roboto-Regular.woff') format('woff'), url('../fonts/roboto/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+label,
+#menu {
+  display: none;
+}
+input[type="checkbox"]:checked ~ .menu {
+  visibility: visible;
+  display: flex;
+}
 .main-header {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/header-photo.jpg'), no-repeat;
   padding: 40px 150px 42px 150px;

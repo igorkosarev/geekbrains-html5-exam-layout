@@ -2,6 +2,14 @@
 @import "mixins.less";
 
 
+label, 
+#menu{
+    display: none;
+}
+input[type="checkbox"]:checked ~ .menu{
+    visibility: visible;
+    display: flex;
+}
 
 .main-header{
 background:
